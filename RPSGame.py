@@ -10,3 +10,5 @@ computer_choice = choices[randint(0,2)]
 
 # print the choice to the terminal window
 print("Computer chooses: ", computer_choice)
+
+hello 
