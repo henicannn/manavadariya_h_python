@@ -22,6 +22,30 @@ while player is False:
 	if player == computer_choice: #tie
 	    print("tie")
 
-	elif player == "rock":
-		
+	elif player == "Rock":
+		if computer_choice == "Paper":
+			print("loss")
+		else:
+			print("win", player, "smashes", computer_choice)
 
+	elif player == "Paper":
+	    if computer_choice == "Scissors":
+	    	print("loss")
+	    else:
+	    	print("win", player, "smashes", computer_choice)
+
+	elif player == "Scissors":
+	    if computer_choice == "Rock":
+	    	print("loss")
+	    else:
+	    	print("win", player, "smashes", computer_choice)
+
+	elif player == "quit":
+		exit()
+	else:
+		print("check your spelling... thats not a valid choice\n")
+
+	#reset game loop
+	player = Flase
+
+computer_choice = choices[randint(0,2)]
