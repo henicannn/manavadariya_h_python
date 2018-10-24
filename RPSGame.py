@@ -9,6 +9,19 @@ choices = ["Rock", "Paper","Scissors"]
 computer_choice = choices[randint(0,2)]
 
 # print the choice to the terminal window
-print("Computer chooses: ", computer_choice)
+print("computer chooses: ", computer_choice)
 
-hello 
+#set up our loop
+
+while player is False:
+	#set player to True by making a selection
+	print("choose your weapon")
+	player = input("Rock, Paper or Scissors?\n")
+	print(player, "\n")
+
+	if player == computer_choice: #tie
+	    print("tie")
+
+	elif player == "rock":
+		
+
